@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <h2>Sign Up Form</h2>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Sign Up Form</legend>
+
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" value="Nasreen" required><br><br>
+
+            <label for="father_name">Father's Name:</label>
+            <input type="text" id="father_name" name="father_name" value="Malahat Ali Khan" required><br><br>
+             <label for="password"(max 8 characters):>Password </label>
+            <input type="password" id="password" name="password" maxlength="8" required><br><br>
+            <label for="birthday">Birthday:</label><br>
+            Date:
+            <select id="date" name="date" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            Month:
+            <select id="month" name="month" required>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+            </select>
+            Year:
+            <select id="year" name="year" required>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+            </select>
+            <br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
